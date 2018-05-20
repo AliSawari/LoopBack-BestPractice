@@ -281,6 +281,10 @@ brace-expansion@^1.1.7:
     balanced-match "^1.0.0"
     concat-map "0.0.1"
 
+bson@^1.0.6, bson@~1.0.4:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/bson/-/bson-1.0.6.tgz#444db59ddd4c24f0cb063aabdc5c8c7b0ceca912"
+
 btoa@1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/btoa/-/btoa-1.1.2.tgz#3e40b81663f81d2dd6596a4cb714a8dc16cfabe0"
@@ -1613,6 +1617,17 @@ loopback-component-explorer@^6.0.0:
     strong-globalize "^3.1.0"
     swagger-ui "^2.2.5"
 
+loopback-connector-mongodb@^3.4.3:
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/loopback-connector-mongodb/-/loopback-connector-mongodb-3.4.3.tgz#20a4488c0c65fc8975c5601559844232f8ff77d4"
+  dependencies:
+    async "^2.6.0"
+    bson "^1.0.6"
+    debug "^3.1.0"
+    loopback-connector "^4.0.0"
+    mongodb "^3.0.1"
+    strong-globalize "^3.1.0"
+
 loopback-connector-remote@^3.0.0:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/loopback-connector-remote/-/loopback-connector-remote-3.3.1.tgz#74faa7c205c04dd889796a647739290cbb22fb0d"
@@ -1622,7 +1637,7 @@ loopback-connector-remote@^3.0.0:
     loopback-datasource-juggler "^3.0.0"
     strong-remoting "^3.0.0"
 
-loopback-connector@^4.4.0:
+loopback-connector@^4.0.0, loopback-connector@^4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/loopback-connector/-/loopback-connector-4.4.0.tgz#15136532896b79d8dc280be27d657fad000c1209"
   dependencies:
@@ -1794,6 +1809,19 @@ mktmpdir@^0.1.1:
 moment@2.x.x:
   version "2.22.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.22.1.tgz#529a2e9bf973f259c9643d237fda84de3a26e8ad"
+
+mongodb-core@3.0.8:
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/mongodb-core/-/mongodb-core-3.0.8.tgz#8d401f4eab6056c0d874a3d5844a4844f761d4d7"
+  dependencies:
+    bson "~1.0.4"
+    require_optional "^1.0.1"
+
+mongodb@^3.0.1:
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-3.0.8.tgz#2c1daecac9a0ec2de2f2aea4dc97d76ae70f8951"
+  dependencies:
+    mongodb-core "3.0.8"
 
 ms@2.0.0:
   version "2.0.0"
@@ -2236,9 +2264,20 @@ require-uncached@^1.0.2, require-uncached@^1.0.3:
     caller-path "^0.1.0"
     resolve-from "^1.0.0"
 
+require_optional@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/require_optional/-/require_optional-1.0.1.tgz#4cf35a4247f64ca3df8c2ef208cc494b1ca8fc2e"
+  dependencies:
+    resolve-from "^2.0.0"
+    semver "^5.1.0"
+
 resolve-from@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-1.0.1.tgz#26cbfe935d1aeeeabb29bc3fe5aeb01e93d44226"
+
+resolve-from@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-2.0.0.tgz#9480ab20e94ffa1d9e80a804c7ea147611966b57"
 
 resolve@^1.1.6:
   version "1.7.1"
@@ -2316,7 +2355,7 @@ semver@^4.1.0:
   version "4.3.6"
   resolved "https://registry.yarnpkg.com/semver/-/semver-4.3.6.tgz#300bc6e0e86374f7ba61068b5b1ecd57fc6532da"
 
-semver@^5.0.3, semver@^5.3.0:
+semver@^5.0.3, semver@^5.1.0, semver@^5.3.0:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.5.0.tgz#dc4bbc7a6ca9d916dee5d43516f0092b58f7b8ab"
 
